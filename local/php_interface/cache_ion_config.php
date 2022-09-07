@@ -1,4 +1,7 @@
 <?php
+
+if(stripos($APPLICATION->GetCurDir(), '/bitrix/') !== false) return;
+
 $cache = Bitrix\Main\Data\Cache::createInstance(); // Служба кеширования
 
 $cachePath = 'ion_config'; // папка, в которой лежит кеш
